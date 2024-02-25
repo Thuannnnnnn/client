@@ -1,85 +1,72 @@
-import React from "react";
+// import React from "react";
 import thumNail from "../img/thumNailLogin.jpg"
-import icon1 from "../img/BlobsVector1.png"
-import icon2 from "../img/BlobsVector2.png"
-import icon3 from "../img/BlobsVector3.png"
 import google from "../img/Google.png"
 export const LoginPage = () => {
   return (
-    <div className="bg-[#e6f3ffbf] flex flex-row justify-center w-full">
-      <div className="bg-[#e6f3ffbf] w-[1440px] h-[1024px]">
-        <div className="relative h-[1024px]">
-          <img
-            className="absolute w-[526px] h-[661px] top-[143px] left-[24px]"
-            alt="Blobs vector"
-            src={icon2}
-          />
-          <img className="absolute w-[530px] h-[607px] top-[78px] left-[116px]" alt="Blobs vector" src={icon1} />
-          <img
-            className="absolute w-[550px] h-[469px] top-[488px] left-0"
-            alt="Blobs vector"
-            src={icon3}
-          />
-          <img className="absolute w-[419px] h-[613px] top-[190px] left-[47px] rounded-full" alt="Main image" src={thumNail} />
-          <div className="absolute w-[845px] h-[1024px] top-0 left-[595px] bg-[#fcfdff]">
-            <div className="relative w-[606px] h-[730px] top-[136px] left-[125px]">
-              <div className="w-[222px] top-[675px] left-[182px] absolute h-[55px]">
-                <div className="relative w-[220px] h-[55px] rounded-[15px]">
-                  <img className="absolute w-[50px] h-[50px] top-[3px] left-[7px]" alt="Google" src={google} />
-                  <div className="absolute w-[141px] top-[17px] left-[66px] [font-family:'Poppins-Medium',Helvetica] font-medium text-[#7c838a] text-[14px] tracking-[0] leading-[normal]">
-                    Sing up with Google
-                  </div>
-                  <div className="w-[220px] top-0 left-0 rounded-[15px] border border-solid border-[#7c838a] absolute h-[55px]" />
-                </div>
-              </div>
-              <div className="absolute top-[580px] left-[249px] [font-family:'Poppins-Medium',Helvetica] font-medium text-[#b0bac3] text-[26px] tracking-[0] leading-[normal]">
-                - OR -
-              </div>
-              <p className="absolute top-[522px] left-[2px] [font-family:'Poppins-Regular',Helvetica] font-normal text-transparent text-[18px] tracking-[0] leading-[normal]">
-                <span className="text-[#7c838a]">You don’t have a account?</span>
-                <span className="text-black">&nbsp;&nbsp;</span>
-                <span className="text-[#f9ed32]">Sign Up</span>
-              </p>
-              <div className="absolute w-[342px] h-[60px] top-[415px] left-[119px]">
-                <div className="relative w-[340px] h-[60px] bg-[#f9ed32] rounded-[10px]">
-                  <button className="absolute w-[215px] top-[10px] left-[63px] [font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[26px] text-center tracking-[0] leading-[normal]">
-                    Sign In
-                  </button>
-                </div>
-              </div>
-              <div className="absolute w-[602px] h-[95px] top-[246px] left-0">
-                <div className="absolute top-0 left-[2px] [font-family:'Poppins-Medium',Helvetica] font-medium text-[#7c838a] text-[20px] tracking-[0] leading-[normal]">
-                  Password
-                </div>
-                <div className="absolute w-[602px] h-[65px] top-[30px] left-0">
-                  <div className="relative w-[600px] h-[65px] rounded-[20px]">
-                    <div className="absolute top-[17px] left-[40px] [font-family:'Poppins-Regular',Helvetica] font-normal text-[#00000080] text-[20px] tracking-[0] leading-[normal]">
-                      Enter your Password here
-                    </div>
-                    <div className="absolute w-[600px] h-[65px] top-0 left-0 bg-[#b0bac366] rounded-[20px]" />
-                  </div>
-                </div>
-              </div>
-              <div className="absolute w-[602px] h-[95px] top-[95px] left-0">
-                <div className="absolute top-0 left-[2px] [font-family:'Poppins-Medium',Helvetica] font-medium text-[#7c838a] text-[20px] tracking-[0] leading-[normal]">
-                  Email
-                </div>
-                <div className="absolute w-[602px] h-[65px] top-[30px] left-0">
-                  <div className="relative w-[600px] h-[65px] rounded-[20px]">
-                    <div className="absolute top-[17px] left-[40px] [font-family:'Poppins-Regular',Helvetica] font-normal text-[#00000080] text-[20px] tracking-[0] leading-[normal]">
-                      Enter your Email here
-                    </div>
-                    <div className="absolute w-[600px] h-[65px] top-0 left-0 bg-[#b0bac366] rounded-[20px]" />
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-0 left-[175px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[26px] tracking-[0] leading-[normal]">
-                Login To System
+
+    <div className="flex flex-wrap w-full">
+         <div className="w-1/2 shadow-2xl">
+        <img className="hidden object-cover w-full h-screen md:block" src={thumNail} alt="thumnail" />
+      </div>
+      <div className="flex flex-col w-full md:w-1/2">
+
+        <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
+          <p className="text-3xl text-center">
+            Welcome
+          </p>
+          <form className="flex flex-col pt-3 md:pt-8">
+            <div className="flex flex-col pt-4">
+              <div className="flex relative ">
+                <span className=" inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z">
+                    </path>
+                  </svg>
+                </span>
+                <input type="text" id="design-login-email" className=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Email" />
               </div>
             </div>
+            <div className="flex flex-col pt-4 mb-12">
+              <div className="flex relative ">
+                <span className=" inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1376 768q40 0 68 28t28 68v576q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-576q0-40 28-68t68-28h32v-320q0-185 131.5-316.5t316.5-131.5 316.5 131.5 131.5 316.5q0 26-19 45t-45 19h-64q-26 0-45-19t-19-45q0-106-75-181t-181-75-181 75-75 181v320h736z">
+                    </path>
+                  </svg>
+                </span>
+                <input type="password" id="design-login-password" className=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Password" />
+              </div>
+            </div>
+            <button type="submit" className="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-black shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2">
+              <span className="w-full">
+                Submit
+              </span>
+            </button>
+          </form>
+          <div className="pt-12 pb-12 text-center">
+            <p>
+              Don&#x27;t have an account?
+              <a href="/signUp" className="font-semibold underline">
+                Register here.
+              </a>
+            </p>
+          </div>
+          <div className=" pb-12 text-center">
+            <p>
+              OR
+            </p>
+          </div>
+          <div className="items-center text-center border w-1/2 rounded-full border-solid border-black hover:bg-black">
+            <button className="">
+            <span>
+            <img src={google} alt=""  className="inline mr-1"/>
+             Sign In With Google
+            </span>
+            </button>
           </div>
         </div>
       </div>
     </div>
+
   );
 };
