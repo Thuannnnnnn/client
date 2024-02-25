@@ -2,7 +2,7 @@
 import './App.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { LoginPage } from './component/login';
+import LoginPage  from './component/login';
 function App() {
   return (
     <BrowserRouter>

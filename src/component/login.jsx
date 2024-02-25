@@ -1,7 +1,7 @@
 // import React from "react";
 import thumNail from "../img/thumNailLogin.jpg"
 import google from "../img/Google.png"
-export const LoginPage = () => {
+const LoginPage = () => {
   return (
 
     <div className="flex flex-wrap w-full">
@@ -70,3 +70,5 @@ export const LoginPage = () => {
 
   );
 };
+
+export default LoginPage;
